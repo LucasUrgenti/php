@@ -22,4 +22,3 @@ echo  $jour . '<br/>';
 $jour = date('F d, Y , h : i a');
 echo  $jour . '</br>';
 ?>
- 

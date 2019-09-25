@@ -11,9 +11,10 @@
         $var3 = 'Variable 3';
         echo '<strong> Voici mon premier programme PHP <strong><br/>' . "\n";
         echo 'C\'est pas mal non ? <br/>';
-        echo "$var1 + $var2" '<br/>';
-        echo $var1 + $var2 '<br/>';
+        echo "$var1 + $var2";
+        echo '<br/>';
         echo $var1 + $var3;
+        echo '<br/>';
     ?>
 </body>
 </html>

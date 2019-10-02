@@ -5,7 +5,7 @@
 
 <form action="cible.php" method="post">
     <p>
-        <input type="text" name="prenom" />
+        <input type="text" name="prenom" /><br/>
         <textarea name="message" rows="8" cols="45">
             Votre message ici.
         </textarea><br />

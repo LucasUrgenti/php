@@ -1,10 +1,13 @@
 <?php
-if (isset($_GET['prenom']) AND isset($_GET['nom'])) // On a le nom et le prénom
+if (isset($_GET['prenom']) AND isset($_GET['nom']) AND isset($_GET['repeter']))
 {
-    echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !';
+    for ($i = 0 ; $i < $_GET['repeter'] ; $i++)
+    {
+        echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !<br />';
+    }
 }
-else // Il manque des paramètres, on avertit le visiteur
+else
 {
-    echo 'Il faut renseigner un nom et un prénom !';
+    echo 'Il faut renseigner un nom, un prénom et un nombre de répétitions !';
 }
 ?>

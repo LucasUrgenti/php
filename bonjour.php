@@ -12,6 +12,8 @@ if (isset($_GET['prenom']) AND isset($_GET['nom']) AND isset($_GET['repeter']))
             echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !<br />';
         }
     }
+    else
+        echo 'Il faut renseigner un nombre de répétitions entre 1 et 100 !';
 }
 else
 {

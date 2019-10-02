@@ -1,9 +1,14 @@
 <?php
 if (isset($_GET['prenom']) AND isset($_GET['nom']) AND isset($_GET['repeter']))
 {
-    for ($i = 0 ; $i < $_GET['repeter'] ; $i++)
+    $_GET['repeter'] = (int) $_GET['repeter'];
+
+    if($_GET['repeter'] => 1 && $_GET['repeter < 100'])
     {
-        echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !<br />';
+        for ($i = 0 ; $i < $_GET['repeter'] ; $i++)
+        {
+            echo 'Bonjour ' . $_GET['prenom'] . ' ' . $_GET['nom'] . ' !<br />';
+        }
     }
 }
 else
